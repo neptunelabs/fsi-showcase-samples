@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>FSI Showcase Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link rel="stylesheet" href="index.css" type="text/css"/>
+  <script src="//fsi-site-origin.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
+  <script src="//fsi-site-origin.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+  <script src="//fsi-site-origin.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
+</head>
+<body>
+<div style="width:100%;height:100%;display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;"
+     id="fsi-showcase-1625571440433-9216043">
+  <fsi-viewer id="fsi-viewer-1625571440433-3980622"
+              style="flex: 1 1 100%;"
+              width="100%"
+              height="100%"
+              debug="true"
+              skin="white"
+              plugins="resize,fullScreen"
+              fullScreenElement="fsi-showcase-1625571440433-9216043"
+  >
+  </fsi-viewer>
+  <fsi-thumbbar
+    style="flex: 0 0 160px;"
+    width="100%"
+    height="100%"
+    dir="@@IMAGES_ROOT/shoes"
+    vertical="false"
+    elementWidth="160px"
+    elementSpacing="4px"
+    alignment="0.5"
+    paddingTop="0"
+    debug="true"
+    paddingBottom="4px"
+    viewerSelector="#fsi-viewer-1625571440433-3980622"
+  >
+  </fsi-thumbbar>
+</div>
+</body>
+</html>

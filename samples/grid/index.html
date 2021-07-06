@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="UTF-8">
+  <title>Your FSI Code</title>
+  <style type="text/css">
+    html,body{
+      font-family:Arial,sans-serif;
+      width:100%;height:100%;
+      margin:0;
+      padding:0;
+    }
+  </style>
+  <script src="//fsi-site-origin.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
+  <script src="//fsi-site-origin.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+  <script src="//fsi-site-origin.neptunelabs.com/fsi/viewer/applications/quickzoom/js/fsiquickzoom.js"></script>
+  <script src="//fsi-site-origin.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js"></script>
+</head>
+<body>
+<div style="width:100%;height:100%;display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;"
+     id="fsi-showcase-1625575226801-6828495">
+  <fsi-viewer id="fsi-viewer-1625575226801-200015"
+              style="flex: 1 1 100%;"
+              width="100%"
+              height="100%"
+              plugins="resize,fullScreen"
+              fullScreenElement="fsi-showcase-1625575226801-6828495"
+  >
+  </fsi-viewer>
+  <fsi-imagegrid
+    style="flex: 1 1 60%;min-height:140px;"
+    width="100%"
+    height="100%"
+    dir="@@IMAGES_ROOT/handbags"
+    cellWidth="120"
+    cellHeight="101"
+    viewerSelector="#fsi-viewer-1625575226801-200015"
+  >
+
+    <fsi-imagegrid-template style="display:none">
+      <div class="myImageGridImage" >
+        <img class="fsi-image-grid-image"/>
+      </div>
+      <div class="myImageGridTitle">
+        ###image.filename###
+      </div>
+    </fsi-imagegrid-template>
+
+  </fsi-imagegrid>
+
+  <style>
+    fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle{
+      padding:0 4px;
+      font-size:11px;
+      text-align:center;
+      height:20px;
+      line-height:20px!important;
+      background-color:#000;
+      color:#999;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+
+    fsi-imagegrid .fsi-imagegrid-root div.myImageGridImage{
+      height:calc(100% - 20px);
+      background-color:#DDD;
+    }
+  </style>
+</div>
+</body>
+</html>

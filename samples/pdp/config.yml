@@ -1,0 +1,7 @@
+title: Product Detail Page
+image: logo.png
+description: PDP with FSI Showcase build from JSON.
+facts:
+  - JS built FSI Showcase
+  - Object visibility
+priority: 4
