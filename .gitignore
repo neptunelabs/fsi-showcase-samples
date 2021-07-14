@@ -8,6 +8,9 @@ package-lock.json
 yarn.lock
 
 node_modules
-bower_components
 dist
+fsi-showcase
+jsfiddle
 .cache
+
+env.yml

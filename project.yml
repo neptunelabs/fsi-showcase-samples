@@ -1,11 +1,5 @@
 ---
 title: 'FSI Showcase Sample'
 projectURL: https://www.neptunelabs.com/fsi-showcase/
-# Please change the following the variables ONLY in env.yml
-# To do this, first copy the file env.yml.dist to env.yml
-env:
-  FSI_SERVER: https://fsi-site.neptunelabs.com
-  FSI_CONTEXT: fsi
-  FSI_VIEWER: viewer
-  IMAGES_ROOT: images/samples/showcase
-  STATIC_ROOT: static/samples/showcase
+originAssetPath: showcase
+jsFiddleBase: fsi-jsfiddle-samples

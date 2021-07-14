@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <link rel="stylesheet" href="index.css" type="text/css"/>
   <script src="index.js"></script>
-  <script src="https://fsi-site.neptunelabs.com/fsi/viewer/applications/layers/js/fsilayers.js"></script>
+  <script src='{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/layers/js/fsilayers.js'></script>
 </head>
 <body>
 <div class="flex-container">
@@ -21,7 +21,7 @@
           height="60%"
           opacity="0.5"
           hidden="0"
-          src="@@IMAGES_ROOT/starter/rect.png"
+          src="{{{sources.images}}}/starter/rect.png"
         >
         </fsi-layer>
         <fsi-layer
@@ -32,7 +32,7 @@
           left="10%"
           opacity="0.5"
           hidden="0"
-          src="@@IMAGES_ROOT/starter/circle.png"
+          src="{{{sources.images}}}/starter/circle.png"
         >
         </fsi-layer>
       </fsi-layer-group>
