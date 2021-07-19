@@ -5,17 +5,18 @@ body, html {
   font-family: sans-serif;
 }
 
-div.flex-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+.container {
+  width:100%;
+  height:100%;
+  display:flex!important;
+  flex-direction:column!important;
+  flex-wrap:nowrap!important;
 }
 
-fsi-layers {
-  width: 100%;
-  height: 100%;
-  flex: 1 1 auto;
+.viewer {
+  flex: 1 1 100%;
+}
+
+.bar {
+  flex: 0 0 160px;
 }

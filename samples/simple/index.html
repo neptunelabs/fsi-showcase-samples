@@ -8,14 +8,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <link rel="stylesheet" href="index.css" type="text/css"/>
   <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"></script>
-  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.j"></script>
+  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"></script>
   <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/thumbbar/js/fsithumbbar.js"></script>
 </head>
 <body>
-<div style="width:100%;height:100%;display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;"
+<div class="container"
      id="fsi-showcase-1625571440433-9216043">
   <fsi-viewer id="fsi-viewer-1625571440433-3980622"
-              style="flex: 1 1 100%;"
+              class="viewer"
               width="100%"
               height="100%"
               debug="true"
@@ -25,10 +25,10 @@
   >
   </fsi-viewer>
   <fsi-thumbbar
-    style="flex: 0 0 160px;"
+    class="bar"
     width="100%"
     height="100%"
-    dir="{{{sources.images}}}/shoes"
+    dir="images/samples/showcase/shoes"
     vertical="false"
     elementWidth="160px"
     elementSpacing="4px"
