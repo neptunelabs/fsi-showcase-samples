@@ -2,3 +2,12 @@ title: Simple Showcase
 image: logo.png
 description: This sample shows a simple showcase.
 priority: 2
+jsfiddle:
+  mapping:
+    html: "index.html"
+    css: "index.css"
+  resources:
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/thumbbar/js/fsithumbbar.js"
+
