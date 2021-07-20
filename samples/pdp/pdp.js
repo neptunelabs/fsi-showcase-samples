@@ -9,8 +9,8 @@ class PDP {
 
     // Templates defined in project/env.yml and replaced by grunt
     this.fsiServer = '{{{fsi.server}}}/{{{fsi.context}}}'
-    this.srcRoot = '{{{sources.images}}}/product-detail'
-    this.assetRoot = '{{{sources.static}}}/product-detail'
+    this.srcRoot = '{{{sources.images}}}/notebook'
+    this.assetRoot = '{{{sources.static}}}/showcase'
 
     this.dataFile = this.fsiServer + '/static/' + this.assetRoot + '/' + dataFile
   }
