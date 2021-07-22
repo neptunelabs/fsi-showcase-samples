@@ -7,6 +7,10 @@
 
 FSI Showcase
 
+FSI Showcase combines the benefits of the zoom viewer with an image gallery.
+FSI Viewer and FSI ThumbBar (or FSI ImageGrid) can be combined for presenting a large number of images in a gallery.
+By clicking on an image, it will be opened in the FSI Viewer where every detail can be explored.
+
 This repository contains examples on how to use and build your own applications.
 
 ![Project Image](project.gif)
@@ -21,6 +25,8 @@ all demos in JSFiddle.
 [Showcase Grid in JSFiddle][gridshowjsf]
 
 [Product Detail Page with in JSFiddle][pdpshowjsf]
+
+[Vertical Showcase in JSFiddle][verticalshowjsf]
 
 ## Start and develop
 
@@ -74,3 +80,4 @@ Official JS API Docs can be found here: [https://docs.neptunelabs.com/fsi-viewer
 [simpleshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/simple
 [gridshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/grid
 [pdpshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/pdp
+[verticalshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/vertical
