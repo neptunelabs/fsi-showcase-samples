@@ -71,3 +71,6 @@ Official JS API Docs can be found here: [https://docs.neptunelabs.com/fsi-viewer
 [Grunt]: https://gruntjs.com/
 [Browsersync]: https://browsersync.io/
 [Bootstrap]: https://getbootstrap.com/
+[simpleshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/simple
+[gridshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/grid
+[pdpshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/pdp

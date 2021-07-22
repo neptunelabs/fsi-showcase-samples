@@ -12,33 +12,38 @@
   <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/thumbbar/js/fsithumbbar.js"></script>
 </head>
 <body>
-<div class="container"
-     id="fsi-showcase-1625571440433-9216043">
-  <fsi-viewer id="fsi-viewer-1625571440433-3980622"
-              class="viewer"
-              width="100%"
-              height="100%"
-              debug="true"
-              skin="white"
-              plugins="resize,fullScreen"
-              fullScreenElement="fsi-showcase-1625571440433-9216043"
-  >
-  </fsi-viewer>
-  <fsi-thumbbar
-    class="bar"
+<div id="Container_FSI_YrmaoHGT5Kj0" class="container">
+  <fsi-viewer
+    adaptiveUISize="false"
+    id="fsijsshwc2"
+    skin="simple"
+    inPlaceZoom="true"
+    autoDisablePointerActions="true"
+    plugins="fullScreen"
+    fullScreenElement="samplePopupContent"
     width="100%"
     height="100%"
-    dir="{{{sources.images}}}/shoes"
-    vertical="false"
-    elementWidth="160px"
-    elementSpacing="4px"
+    class="viewer">
+  </fsi-viewer>
+  <fsi-thumbbar
+    id="imageflow2"
+    viewerID="fsijsshwc2"
+    paddingBottom="15"
+    scrollHeight="8"
+    enableScrollBar="1"
+    centerZoomedImage="1"
+    positionQuantization="1"
+    elementWidth="150"
+    backgroundDarkness="0"
+    dir="{{{sources.images}}}/handbags"
+    presentationType="flat"
+    vertical="true"
+    imageBorderColor="#FFF"
+    mirrorHeight="0"
+    width="20%"
+    height="100%"
     alignment="0.5"
-    paddingTop="0"
-    debug="true"
-    paddingBottom="4px"
-    viewerSelector="#fsi-viewer-1625571440433-3980622"
-  >
-  </fsi-thumbbar>
+    class="bar"></fsi-thumbbar>
 </div>
 </body>
 </html>
