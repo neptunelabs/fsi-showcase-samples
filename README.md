@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-layers-samples/blob/main/LICENSE)
 
 
-FSI Showcase ....
+FSI Showcase
 
 This repository contains examples on how to use and build your own applications.
 
@@ -16,13 +16,11 @@ This repository contains examples on how to use and build your own applications.
 Without starting this project in your IDE, you can discover, develop and customize
 all demos in JSFiddle.
 
-[Flowers in JSFiddle][flowjsf]
+[Simple Showcase in JSFiddle][simpleshowjsf]
 
-[Trains in JSFiddle][trainsjsf]
+[Showcase Grid in JSFiddle][gridshowjsf]
 
-[Kitchen in JSFiddle][kitchenjsf]
-
-[Product Detail Page in JSFiddle][pdpjsf]
+[Product Detail Page with in JSFiddle][pdpshowjsf]
 
 ## Start and develop
 
