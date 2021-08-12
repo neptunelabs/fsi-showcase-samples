@@ -1,3 +1,4 @@
+npm start
 # [FSI Showcase](https://www.neptunelabs.com/fsi-showcase/) &middot; Samples
 | ***Pixel-perfect*** | ***High-DPI-ready*** | ***Fast :rocket:*** | ***Hackable*** | ***Consistent*** |
 |:-----------------:|:-------------:|:---------------:|:---------------:|:---------------:|
