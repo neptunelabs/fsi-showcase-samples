@@ -50,6 +50,15 @@ fsi-thumbbar div.fsi-thumbbar-container .fsi-thumbbar-thumbnail.fsi-selected-thu
   background-color: #91B595!important;
 }
 
+ul {
+  padding-left: 1em !important;
+  margin-left: 1em;
+}
+
+li {
+  list-style-type: disc !important;
+}
+
 .credit{
   font-size: x-small;
   color: #666666;

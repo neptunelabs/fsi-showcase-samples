@@ -15,12 +15,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
 </head>
-<body onload="switchImageSample();">
+<body>
 
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#" aria-label="Product">
-      <img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
+      <img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-clothing-gre.svg" height="24">
     </a>
     <a class="p-6 d-none d-md-inline-block" href="#">SHOP</a>
     <a class="p-6 d-none d-md-inline-block" href="#">COLLECTION</a>
@@ -32,7 +32,7 @@
 
 <main>
   <div class="bg-light d-md-flex flex-md-equal w-100 overflow-hidden">
-    <div class="row row-cols-1 row-cols-md-2 g-3 px-5">
+    <div class="row row-cols-1 row-cols-md-2 g-3 py-3 px-5">
       <div class="col-8" >
         <div style="width:100%;height:100%;display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;"
              id="fsi-showcase-1628782188138-9938604">
@@ -68,7 +68,7 @@
     <div class="col-4 mx-auto">
       <div class="p-3 text-left">
         <h2 class="display-5">Peggy</h2>
-        <p>Dress, Coudrouy & Cotton</p>
+        <p>Dress, Corduroy & Cotton</p>
         <p>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -86,179 +86,61 @@
           <small>Dispatched in 4 working days</small>
         </p>
         <div class="row pb-3">
-          <div class="col-4 h-100 d-inline-block" id="img1">
-            <img class="thumbnail" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg&height=150" height="150" alt="">
+          <div class="col-4 h-100 d-inline-block">
+            <img class="thumbnail" onclick="changeImage('0')" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg&height=150" height="150" alt="">
             <p>
               <small>Charcoal</small>
             </p>
           </div>
-          <div class="col-4 h-100 d-inline-block" id="img2" >
-            <img class="thumbnail" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg&height=150" height="150" alt="">
+          <div class="col-4 h-100 d-inline-block"  >
+            <img class="thumbnail" onclick="changeImage('1')" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg&height=150" height="150" alt="">
             <p>
               <small>Burgundy</small>
             </p>
           </div>
-          <div class="col-4 h-100 d-inline-block" id="img3">
-            <img class="thumbnail" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg&height=150" height="150" alt="">
+          <div class="col-4 h-100 d-inline-block">
+            <img class="thumbnail" onclick="changeImage('2')" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg&height=150" height="150" alt="">
             <p>
               <small>Mountain Grey</small>
             </p>
           </div>
         </div>
         <div class="btn-group py-3">
+          <button type="button" class="btn btn-lg btn-outline-secondary">Learn more</button>
+        </div>
+        <div class="btn-group py-3">
           <button type="button" class="btn btn-lg btn-outline-secondary">Add to basket</button>
         </div>
         <p  class="pt-3">
-         Dimensions:
+          <strong>Product Details</strong>
         <div class="row">
-        <div class="col-6 text-left">
-        <strong>Height (cm)</strong>
-      </div>
-        <div class="col-6 text-left">
-          83
-        </div>
-      </div>
-        <div class="row">
-          <div class="col-6 text-left">
-            <strong>Width (cm)</strong>
+          <div class="col-1 text-left">
+            <i class="bi bi-caret-right-fill"></i>
           </div>
-          <div class="col-6 text-left">
-            156
+          <div class="col-11 text-left">
+            Flattering fit
           </div>
         </div>
         <div class="row">
-          <div class="col-6 text-left ">
-            <strong>Depth (cm)</strong>
+          <div class="col-1 text-left">
+            <i class="bi bi-caret-right-fill"></i>
           </div>
-          <div class="col-6 text-left">
-            45
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 text-left">
-            <strong>Drawers internal dimensions</strong>
-          </div>
-          <div class="col-6 text-left">
-            13 x 44 x 38 cm
+          <div class="col-11 text-left">
+            3/4 sleeves
           </div>
         </div>
         <div class="row">
-          <div class="col-6 text-left ">
-            <strong>Leg height (cm)</strong>
+          <div class="col-1 text-left">
+            <i class="bi bi-caret-right-fill"></i>
           </div>
-          <div class="col-6 text-left">
-           17
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 text-left">
-            <strong>Weight (kg)</strong>
-          </div>
-          <div class="col-6 text-left">
-            50
+          <div class="col-11 text-left">
+            Available in 3 colours
           </div>
         </div>
-        </p>
+    </p>
       </div>
     </div>
   </div>
-  </div>
-
-  <div class="d-md-flex bg-light flex-md-equal w-100 py-3 mx-auto text-center overflow-hidden">
-    <h2 class="display-5">Customers also viewed:</h2>
-  </div>
-
-  <div class="row bg-light row-cols-1 row-cols-sm-2 row-cols-md-6 g-3 px-5 py-3 w-100">
-    <div class="col">
-      <div class="card">
-        <img class="card-img-top" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-OngbrOmqtzc-unsplash.jpg&width=286&rect=0,0.28261,0.98167,0.65489" alt="" width="286">
-        <div class="card-body">
-          <div class="col-6 product-heading">Emma</div>
-          <p class="product-text">Bedside Table, Natural Wood</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-            </div>
-            <small class="text-muted">$169</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img class="card-img-top" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=286&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" alt="" width="286">
-        <div class="card-body">
-          <div class="col-6 product-heading">Albion</div>
-          <p class="product-text">Sideboard, Pine Wood</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-            </div>
-            <small class="text-muted"><s>$499</s> $399</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img class="card-img-top" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-boFO5uIUKUU-unsplash.jpg&width=286&rect=0.09327,0,0.66009,1" alt="" width="286">
-        <div class="card-body">
-          <div class="col-6 product-heading">Maral</div>
-          <p class="product-text">3 Seater Sofa, Off White Linen</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-            </div>
-            <small class="text-muted">$599</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img class="card-img-top" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-kfIN3cGA5xE-unsplash.jpg&width=286&rect=0.04975,0,0.90796,0.99185&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" alt="" width="286">
-        <div class="card-body">
-          <div class="col-6 product-heading">Harlow</div>
-          <p class="product-text">King Size Bed with Storage, Pine Wood</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-            </div>
-            <small class="text-muted"><s>$649</s> $549</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img class="card-img-top" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-ReWaWXpLnP8-unsplash.jpg&width=286&rect=0.17663,0.00951,0.66033,0.99049" alt="" width="286">
-        <div class="card-body">
-          <div class="col-6 product-heading">Hopper</div>
-          <p class="product-text">Shelving Unit, Oak Wood</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-            </div>
-            <small class="text-muted">$349</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img class="card-img-top" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-S_jZAOH1Zwg-unsplash.jpg&width=286&rect=0,0.33288,1,0.66712" alt="" width="286">
-        <div class="card-body">
-          <div class="col-6 product-heading">Abbey</div>
-          <p class="product-text">Storage Cabinet, Charcoal Oak Wood</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-            </div>
-            <small class="text-muted">$649</small>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
 </main>
@@ -267,7 +149,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md">
-        <img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
+        <img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-clothing-gre.svg" height="24">
         <small class="d-block mb-3">&copy; 2017–2021</small>
       </div>
       <div class="col-6 col-md">
