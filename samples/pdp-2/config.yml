@@ -1,6 +1,6 @@
-title: Product Detail Page (Variants)
+title: Product Detail Page (Vertical)
 image: logo.png
-description: Shows how Showcase can be used with color variants.
+description: Shows how a vertical Showcase can be used with color variants.
 priority: 6
 jsfiddle:
   mapping:

@@ -95,3 +95,10 @@ li {
     flex: 1;
   }
 }
+
+@media screen and (max-width:640px) {
+  .viewer {
+    height: 500px;
+    width: 100%;
+  }
+}

@@ -15,7 +15,7 @@ function changeImage(buttonID){
       src = 'images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg';
       break
   }
-  document.getElementsByTagName("fsi-thumbbar")[0].changeConfig(undefined, {imagesources: imagesrc, autoCrop: "cc"});
+  document.getElementsByTagName("fsi-thumbbar")[0].changeConfig(undefined, {imagesources: imagesrc, autoCrop: "cc", vertical: true,  elementWidth:"160px"});
   document.getElementsByTagName("fsi-viewer")[0].changeConfig(undefined, {imagesrc: src});
 
 }
