@@ -1,16 +1,16 @@
-title: Product Detail Page
+title: Photographer Portfolio
 image: logo.png
-description: This sample shows a simple showcase embedded in a product page.
-priority: 6
+description: Shows how a portfolio could be displayed with ImageGrid and Metadata used. On click a zoom viewer with the image is opened via modal.
+priority: 5
 jsfiddle:
   mapping:
     html: "index.html"
-    js: "pdp.js"
-    css: "pdp.css"
+    css: "portfolio.css"
+    js: "portfolio.js"
   resources:
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
     - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
     - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js
     - https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
     - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/thumbbar/js/fsithumbbar.js"
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"
