@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link rel="stylesheet" href='portfolio.css' type="text/css"/>
   <script src='portfolio.js'></script>
-  <script src='{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/thumbbar/js/fsithumbbar.js'></script>
+  <script src='{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/imagegrid/js/fsiimagegrid.js'></script>
   <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"></script>
   <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
 <main class="content mx-auto">
 
   <div class="d-md-flex bg-dark text-light flex-md-equal py-3 mx-auto text-center overflow-hidden">
-    <h2 class="display-5">Landscapes</h2>
+    <h2 class="display-8">Landscapes</h2>
   </div>
   <div class="d-md-flex bg-dark text-light flex-md-equal mx-auto text-center overflow-hidden">
     <h6>A variety of photos by Samuel Ferrera.</h6>
@@ -43,45 +43,44 @@
   <div class="row d-md-flex bg-dark text-light flex-md-equal py-3 mx-auto text-center overflow-hidden">
     <div class="col-md-2">
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 viewer">
       <div style="width:100%;height:100%;display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;"
-           id="fsi-showcase-1637681446335-6233499">
-        <fsi-viewer id="fsi-viewer-1637681446336-7358452"
+           id="fsi-showcase-1638202879465-5456242">
+        <fsi-viewer id="fsi-viewer-1638202879466-1436698"
                     style="flex: 1 1 100%;"
                     width="100%"
                     height="100%"
-                    plugins="resize,fullScreen"
-                    fullScreenElement="fsi-showcase-1637681446335-6233499"
+                    skin="skin="white" "
+        plugins="resize,fullScreen"
+        fullScreenElement="fsi-showcase-1638202879465-5456242"
         >
         </fsi-viewer>
-      <fsi-imagegrid style="flex: 1 1 60%;min-height:140px;"
-                     dir="/images/samples/grid/landscape/"
-                     id="fsi-grid-fit"
-                     cellWidth="300"
-                     cellHeight="325"
-                     useTouchZoom="true"
-                     useQuickZoom="false"
-                     autoCrop="cc"
-                     scroll="false"
-                     debug="true"
-                     viewerSelector="#fsi-viewer-1637681446336-7358452"
-      >
+        <fsi-imagegrid
+          style="flex: 1 1 60%;min-height:140px;"
+          width="100%"
+          height="100%"
+          dir="images/samples/grid/landscape"
+          cellWidth="300"
+          cellHeight="125"
+          useTouchZoom="true"
+          useQuickZoom="false"
+          autoCrop="cc"
+          viewerSelector="#fsi-viewer-1638202879466-1436698"
+        >
 
-        <fsi-imagegrid-template style="display:none">
-          <div class="myImageGridTitle">
-            <span>###iptc.Caption###</span>
-          </div>
-          <div class="myImageGridImage" >
-            <img class="fsi-image-grid-image"/>
-          </div>
-          <div class="myImageGridText" >
-					<span>
-						###iptc.FSI Extra###<br/><br/>
-						Foto: ###iptc.Credit###<br/><br/>
-					</span>
-          </div>
-        </fsi-imagegrid-template>
-      </fsi-imagegrid>
+          <fsi-imagegrid-template style="display:none">
+            <div class="myImageGridTitle">
+              <span>###iptc.Caption###, ###iptc.FSI Extra###</span>
+            </div>
+            <div class="myImageGridImage" >
+              <img class="fsi-image-grid-image"/>
+            </div>
+            <div class="myImageGridText" >
+            </div>
+          </fsi-imagegrid-template>
+
+        </fsi-imagegrid>
+
         <style>
           fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle{
             padding:0 4px;

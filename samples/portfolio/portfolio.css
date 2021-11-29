@@ -6,15 +6,25 @@
   max-width: 960px;
 }
 
+.viewer {
+  height: 700px;
+}
+
+div.fsi-imagegrid-inner-container {
+  background-color: #ffffff;
+}
+
+fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle {
+  background-color: #eeeeee!important;
+  color: #212529!important;
+}
+
 .thumbnail
 {
   cursor: pointer;
 }
 
-div.fsi-imagegrid-inner-container > div {
-  border: 1px solid #33333340;
-  background-color: #6660;
-}
+
 
 .site-header {
   background-color: rgba(0, 0, 0, .85);
