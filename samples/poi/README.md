@@ -1,4 +1,4 @@
-# Using FSI Viewer for 360° Image Zoom - Points Of Interest
+# Using FSI Viewer for 360° Showcase Image Zoom - Points Of Interest
 
 This readme describes how a simple detail page 360° sample including Points Of Interest with *FSI Viewer* is achieved.
 The aim of the demo is to show how you can easily integrate spin images with zoom by just adding a simple viewer tag.
