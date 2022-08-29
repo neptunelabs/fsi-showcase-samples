@@ -20,7 +20,7 @@ There are several possibilities to upload images into the interface.
 
 # Add Showcase Zoom on the website
 
-While having an image selected, you can see all possible publishing ways for the specific item by visting the Publish To Web tab.
+While having an image selected, you can see all possible publishing ways for the specific item by visiting the "Publish To Web" tab.
 For this example, select the preset *Showcase - thumbnails to the left* in the section *Showcases*:
 
 ![Config Image](readme-show-1.png)

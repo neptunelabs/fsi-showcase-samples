@@ -20,7 +20,7 @@ There are several possibilities to upload images into the interface.
 
 # Use 360° spin & zoom on the website
 
-While having an image selected, you can see all possible publishing ways for the specific item by visting the Publish To Web tab.
+While having an image selected, you can see all possible publishing ways for the specific item by visiting the "Publish To Web" tab.
 For this example, select the preset *FSI Viewer - black skin* in the section *360° Spins*:
 
 ![Config Image](readme-poi-1.png)
@@ -58,7 +58,7 @@ In our example this will look like this:
 
 The difference between the normal 2D viewer and the 360° viewer is that the latter uses *dir* instead of *src*.
 
-Now we want to have some points of interest. This is achived by setting them in an XML configuration.
+Now we want to have some points of interest. This is achieved by setting them in an XML configuration.
 This is discussed in a tutorial on our website: [Points Of Interest Tutorial](https://www.neptunelabs.com/fsi-viewer-js/multiple-spins-showcase/).
 
 The resulting viewer with thumbbar looks like this:
