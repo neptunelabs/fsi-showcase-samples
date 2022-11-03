@@ -35,9 +35,9 @@ In order to display the Showcase, you only need to add the scripts listed in the
 to the head of your website:
 
 ```html
-<script src="//fsi-site.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
-<script src="//fsi-site.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
-<script src="//fsi-site.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js"></script>
+<script src="//docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
+<script src="//docs.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+<script src="//docs.neptunelabs.com/fsi/viewer/applications/imagegrid/js/fsiimagegrid.js"></script>
 ```
 This ensures that the viewers are loaded.
 
@@ -98,19 +98,19 @@ This is achived by the function **changeImage** which is called onClick of the t
 
 ```html
 <div class="col-4 h-100 d-inline-block">
-            <img class="thumbnail img-fluid" onclick="changeImage('0')" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg&height=150" height="150" alt="">
+            <img class="thumbnail img-fluid" onclick="changeImage('0')" src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg&height=150" height="150" alt="">
             <p>
               <small>Charcoal</small>
             </p>
           </div>
           <div class="col-4 h-100 d-inline-block"  >
-            <img class="thumbnail img-fluid" onclick="changeImage('1')" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg&height=150" height="150" alt="">
+            <img class="thumbnail img-fluid" onclick="changeImage('1')" src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg&height=150" height="150" alt="">
             <p>
               <small>Burgundy</small>
             </p>
           </div>
           <div class="col-4 h-100 d-inline-block">
-            <img class="thumbnail img-fluid" onclick="changeImage('2')" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg&height=150" height="150" alt="">
+            <img class="thumbnail img-fluid" onclick="changeImage('2')" src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg&height=150" height="150" alt="">
             <p>
               <small>Mountain Grey</small>
             </p>
