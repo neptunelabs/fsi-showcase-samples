@@ -94,7 +94,7 @@ For all parameters which can be used, please consult the [manual](https://docs.n
 
 By clicking on the color variant thumbnail on the right, you can switch between the different color variants.
 
-This is achived by the function **changeImage** which is called onClick of the thumbnail:
+This is achieved by the function **changeImage** which is called onClick of the thumbnail:
 
 ```html
 <div class="col-4 h-100 d-inline-block">
