@@ -4,33 +4,6 @@ This readme describes how a simple detail page 360° sample including Points Of 
 The aim of the demo is to show how you can easily integrate spin images with zoom by just adding a simple viewer tag.
 The points of interest are achieved by using FSI ThumbBar.
 
-# Add your images/ assets to FSI Server
-
-First, you'll need to upload the images you want to use to FSI Server.
-You can install a [demo version](https://www.neptunelabs.com/get/) via Docker or use our [online demo server](https://demo.fsi-server.com/fsi/interface/) to try it out first.
-
-# Uploading images
-
-There are several possibilities to upload images into the interface.
-
-![Config Image](readme-poi.png)
-
-- Choose the Upload tab, click the "Choose files" button to add files to upload to the list. The files will be uploaded to the current folder.
-- Drag & Drop files to the file view or the tree view
-
-# Use 360° spin & zoom on the website
-
-While having an image selected, you can see all possible publishing ways for the specific item by visiting the "Publish To Web" tab.
-For this example, select the preset *FSI Viewer - black skin* in the section *360° Spins*:
-
-![Config Image](readme-poi-1.png)
-
-The *Source Code* section enables you to control the look of your viewer by setting the dimensions and format, as well as adding effects or crop options to it.
-In this area you also can see the source code for your selected publishing option which you can edit and copy to publish the images.
-You also see the required scripts which need to be embedded on the site.
-
-![Config Image](readme-poi-2.png)
-
 In order to display 360° zoom with FSI Viewer, you only need to add the corresponding script
 to the head of your website:
 

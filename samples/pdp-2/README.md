@@ -4,33 +4,6 @@ This readme describes how the Detail page sample with *FSI Showcase* is achieved
 The aim of the demo is to show how you can easily integrate images with thumbnails zoom by just adding
 two simple custom tags.
 
-# Add your images/ assets to FSI Server
-
-First, you'll need to upload the images you want to use to FSI Server.
-You can install a [demo version](https://www.neptunelabs.com/get/) via Docker or use our [online demo server](https://demo.fsi-server.com/fsi/interface/) to try it out first.
-
-# Uploading images
-
-There are several possibilities to upload images into the interface.
-
-![Config Image](readme-portfolio.png)
-
-- Choose the Upload tab, click the "Choose files" button to add files to upload to the list. The files will be uploaded to the current folder.
-- Drag & Drop files to the file view or the tree view
-
-# Add Showcase Zoom on the website
-
-While having an image selected, you can see all possible publishing ways for the specific item by visiting the "Publish To Web" tab.
-For this example, select the preset *Showcase - grid to the bottom* in the section *Showcases*:
-
-![Config Image](readme-portfolio-1.png)
-
-The *Source Code* section enables you to control the look of your viewer by setting the dimensions and format, as well as adding effects or crop options to it.
-In this area you also can see the source code for your selected publishing option which you can edit and copy to publish the images.
-You also see the required scripts which need to be embedded on the site.
-
-![Config Image](readme-portfolio-2.png)
-
 In order to display the Showcase, you only need to add the scripts listed in the **Required Scripts** field
 to the head of your website:
 
@@ -143,7 +116,6 @@ function changeImage(buttonID){
 
 }
 ```
-
 
 ## Testing with examples from your own server
 
