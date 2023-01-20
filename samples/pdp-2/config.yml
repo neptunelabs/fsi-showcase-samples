@@ -20,7 +20,6 @@ sample:
             link: https://www.neptunelabs.com/fsi-showcase/
       fsi:
         viewer: true
-        touchZoom: true
         thumbBar: true
       bootstrap:
         icons: true

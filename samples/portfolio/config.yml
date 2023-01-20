@@ -19,7 +19,6 @@ sample:
             link: https://www.neptunelabs.com/fsi-showcase/
       fsi:
         viewer: true
-        touchZoom: true
         imageGrid: true
       bootstrap:
         icons: true
