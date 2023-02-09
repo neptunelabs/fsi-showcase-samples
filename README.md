@@ -7,12 +7,11 @@ npm start
 
 
 FSI Showcase
+FSI Showcase combines the benefits of a zoom viewer with an image gallery.
+FSI Viewer and FSI ThumbBar (or FSI ImageGrid) can be combined to present a large number of images in a gallery.
+Clicking on an image will open it in FSI Viewer, where every detail can be explored.
 
-FSI Showcase combines the benefits of the zoom viewer with an image gallery.
-FSI Viewer and FSI ThumbBar (or FSI ImageGrid) can be combined for presenting a large number of images in a gallery.
-By clicking on an image, it will be opened in the FSI Viewer where every detail can be explored.
-
-This repository contains examples on how to use and build your own applications.
+This repository contains examples of how to use and build your own applications.
 
 ![Project Image](project.gif)
 
