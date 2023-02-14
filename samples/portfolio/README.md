@@ -11,21 +11,25 @@ To display the Showcase, simply add the following scripts to the head of your we
 <script src="//fsi-site.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
 <script src="//fsi-site.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
 ```
+
 This will ensure that the viewers are loaded.
 
 Next, you need to place the tags you see in the Publish section where you want the viewer to appear.
 In our example, this will look like this
 
 ```html
-<div style="width:100%;height:100%;display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;"
-     id="fsi-showcase-1638202879465-5456242">
-  <fsi-viewer id="fsi-viewer-1638202879466-1436698"
-              style="flex: 1 1 100%;"
-              width="100%"
-              height="100%"
-              skin="white"
-              plugins="resize,fullScreen"
-              fullScreenElement="fsi-showcase-1638202879465-5456242"
+<div
+  style="width:100%;height:100%;display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;"
+  id="fsi-showcase-1638202879465-5456242"
+>
+  <fsi-viewer
+    id="fsi-viewer-1638202879466-1436698"
+    style="flex: 1 1 100%;"
+    width="100%"
+    height="100%"
+    skin="white"
+    plugins="resize,fullScreen"
+    fullScreenElement="fsi-showcase-1638202879465-5456242"
   >
   </fsi-viewer>
   <fsi-imagegrid
@@ -40,37 +44,34 @@ In our example, this will look like this
     autoCrop="cc"
     viewerSelector="#fsi-viewer-1638202879466-1436698"
   >
-
     <fsi-imagegrid-template style="display:none">
       <div class="myImageGridTitle">
         <span>###iptc.Caption###, ###iptc.FSI Extra###</span>
       </div>
-      <div class="myImageGridImage" >
-        <img class="fsi-image-grid-image"/>
+      <div class="myImageGridImage">
+        <img class="fsi-image-grid-image" />
       </div>
-      <div class="myImageGridText" >
-      </div>
+      <div class="myImageGridText"></div>
     </fsi-imagegrid-template>
-
   </fsi-imagegrid>
 
   <style>
-    fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle{
-      padding:0 4px;
-      font-size:11px;
-      text-align:center;
-      height:20px;
-      line-height:20px!important;
-      background-color:#000;
-      color:#999;
-      overflow:hidden;
-      text-overflow:ellipsis;
+    fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle {
+      padding: 0 4px;
+      font-size: 11px;
+      text-align: center;
+      height: 20px;
+      line-height: 20px !important;
+      background-color: #000;
+      color: #999;
+      overflow: hidden;
+      text-overflow: ellipsis;
       white-space: nowrap;
     }
 
-    fsi-imagegrid .fsi-imagegrid-root div.myImageGridImage{
-      height:calc(100% - 20px);
-      background-color:#DDD;
+    fsi-imagegrid .fsi-imagegrid-root div.myImageGridImage {
+      height: calc(100% - 20px);
+      background-color: #ddd;
     }
   </style>
 </div>
@@ -84,20 +85,19 @@ In our example, we have added some labels below the thumbnails in the image grid
 This is achieved by adding the following part
 
 ```html
- <fsi-imagegrid-template style="display:none">
-      <div class="myImageGridTitle">
-        <span>###iptc.Caption###, ###iptc.FSI Extra###</span>
-      </div>
-      <div class="myImageGridImage" >
-        <img class="fsi-image-grid-image"/>
-      </div>
-      <div class="myImageGridText" >
-      </div>
-    </fsi-imagegrid-template>
+<fsi-imagegrid-template style="display:none">
+  <div class="myImageGridTitle">
+    <span>###iptc.Caption###, ###iptc.FSI Extra###</span>
+  </div>
+  <div class="myImageGridImage">
+    <img class="fsi-image-grid-image" />
+  </div>
+  <div class="myImageGridText"></div>
+</fsi-imagegrid-template>
 ```
 
 The div with the ImageGrid title contains the metadata Caption and FSI Extra.
-To add this metadata, go to the *Metadata* tab, click on the three tiles on the right and select **Add Fields**:
+To add this metadata, go to the _Metadata_ tab, click on the three tiles on the right and select **Add Fields**:
 ![Config Image](readme-portfolio-3.png)
 
 Tip: If you do this with multiple images selected, the fields will be added to them, making it more convenient.

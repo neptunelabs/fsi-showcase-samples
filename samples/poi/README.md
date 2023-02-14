@@ -13,11 +13,10 @@ To display 360° zoom with FSI Viewer, all you need to do is add the following s
 at the top of your website:
 
 ```html
-<script
-  src='https://docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js'
-</script>
+<script src='https://docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js'</script>
+<script src="//docs.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
 ```
-This will ensure that the FSI Viewer is loaded.
+This will ensure that the FSI Viewer and FSI ThumbBar is loaded.
 
 Next, you need to place the *<fsi-viewer>* tag you see in the Publish section where you want the viewer to appear.
 In our example this looks like this

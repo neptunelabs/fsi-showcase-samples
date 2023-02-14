@@ -1,60 +1,59 @@
 <div class="container">
   <div class="row bg-white p-4 mt-4">
-    <div class="col-md-6 col-sm-12 col-xs-12 sticky-top px-0" id="fsiLayersContainer">
+    <div class="col-md-6 col-sm-12 col-xs-12 px-0">
       <div class="showcasecontainer">
-        <fsi-viewer adaptiveUISize="false" id="fsijsshwc2"
-                    progressBarVAlign="top" progressBarWidth="50"  inPlaceZoom="true"
-                    autoDisablePointerActions="true" plugins="fullScreen,resize"
-                    fullScreenElement="samplePopupContent" width="100%" height="100%"
-                    class="viewer"
-                    initialView="1,1,0.246347,0.192918,0.816976,0.755272,0"
-                    dir="/images/samples/notebook/" zoommeter_srcRelative="true"
-                    debug="true">
-
+        <fsi-viewer
+          adaptiveUISize="false"
+          id="fsijsshwc2"
+          progressBarVAlign="top"
+          progressBarWidth="50"
+          inPlaceZoom="true"
+          autoDisablePointerActions="true"
+          plugins="fullScreen,resize"
+          fullScreenElement="samplePopupContent"
+          width="100%"
+          height="100%"
+          class="viewer"
+          initialView="1,1,0.246347,0.192918,0.816976,0.755272,0"
+          dir="/images/samples/notebook/"
+          zoommeter_srcRelative="true"
+          debug="true"
+        >
         </fsi-viewer>
 
-        <fsi-thumbbar cfg="samples/showcase-notebook.xml"
-                      viewerSelector="fsijsshwc2" id="imageflow2"
-                      viewerID="fsijsshwc2" imagelistParameterFilterPositive="initialView,ThumbLabel"
-                      enableScrollBar="1" paddingTop="2" elementWidth="18%" minElementWidth="180"
-                      elementSpacing="12px" presentationType="flat" imageBorderColor="#FFF"
-                      class="bar"/>
-
+        <fsi-thumbbar
+          cfg="samples/showcase-notebook.xml"
+          viewerSelector="fsijsshwc2"
+          id="imageflow2"
+          viewerID="fsijsshwc2"
+          imagelistParameterFilterPositive="initialView,ThumbLabel"
+          enableScrollBar="1"
+          paddingTop="2"
+          elementWidth="18%"
+          minElementWidth="180"
+          elementSpacing="12px"
+          presentationType="flat"
+          imageBorderColor="#FFF"
+          class="bar"
+        />
       </div>
-      <div style="clear:both"></div>
+      <div style="clear: both"></div>
     </div>
     <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
       <h1 id="productName" class="display-6">Star Notebook</h1>
       <small>Product by <a href="#" class="link-primary" id="productProducer">Manufacturer XY</a></small> -
       <small>Sold by <a href="#" class="link-primary" id="productSeller">Vendor XY</a></small>
-      <p>
-        <span class="yellow-txt" id="productStars"></span>
-        <small>(<span id="productRatings"></span>) 4000 Ratings</small>
-      </p>
-      <hr/>
+      <hr />
       <div class="row align-items-center">
         <div class="col">
           <h3>$ <span id="priceTotal">499.00</span></h3>
           <small>*includes tax (excl. shipping)</small>
         </div>
         <div class="col text-end">
-          <button type="button" class="btn btn-lg text-dark yellow-bg" id="cardBtn">
-            Add to Cart
-          </button>
-          <br/>
+          <button type="button" class="btn btn-lg text-dark yellow-bg" id="cardBtn">Add to Cart</button>
+          <br />
         </div>
       </div>
-      <div class="row align-items-center">
-        <div class="col">
-          <div class="progress mt-3">
-            <div id="stockCounter" class="progress-bar bg-success" role="progressbar"></div>
-            <div id="stockParent"></div>
-          </div>
-        </div>
-      </div>
-      <hr/>
-      <div id="layerSwitches"></div>
-      <hr/>
       <div class="card-group w-75">
         <div class="card">
           <div class="card-body">
@@ -69,18 +68,24 @@
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
       <div>
         <p class="lead">Product Description</p>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
       </div>
     </div>
   </div>
 </div>
 <div class="container small">
   <p>
-    * within our factory, outside the delivery time can be delayed by up to
-    90 days<br/>
+    * within our factory, outside the delivery time can be delayed by up to 90 days<br />
     ** all dimensions, colors and functions can vary
   </p>
 </div>

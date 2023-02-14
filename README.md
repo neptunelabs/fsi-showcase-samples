@@ -6,7 +6,8 @@ npm start
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-layers-samples/blob/main/LICENSE)
 
 
-FSI Showcase
+# FSI Showcase
+
 FSI Showcase combines the benefits of a zoom viewer with an image gallery.
 FSI Viewer and FSI ThumbBar (or FSI ImageGrid) can be combined to present a large number of images in a gallery.
 Clicking on an image will open it in FSI Viewer, where every detail can be explored.
