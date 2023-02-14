@@ -1,7 +1,11 @@
 overview:
   title: Product Detail Page (Vertical)
   image: logo.png
-  description: Shows how a vertical Showcase can be used with color variants.
+  description: Shows how a horizontal Showcase can be used with color variants.
+  facts:
+    - Horizontal showcase
+    - With FSI ThumbBar
+    - Color Variants
   order: 1
 sample:
   template:

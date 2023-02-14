@@ -2,7 +2,12 @@ overview:
   title: Product Detail Page
   image: logo.png
   description: This sample shows a simple showcase embedded in a product page.
-  order: 6
+  facts:
+    - Horizontal showcase
+    - With FSI ThumbBar
+    - Point Of Interest
+    - Labels
+  order: 7
 sample:
   template:
     schema: framework-2023

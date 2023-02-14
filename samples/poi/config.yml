@@ -2,6 +2,10 @@ overview:
   title: Point Of Interest
   image: logo.png
   description: Shows how a product detail page could look with 360° images and points of interest used.
+  facts:
+    - Vertical showcase
+    - With FSI ThumbBar
+    - Points Of Interest
   order: 4
 sample:
   template:
