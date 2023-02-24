@@ -1,7 +1,7 @@
 overview:
   title: Product Detail Page
   image: logo.png
-  description: This sample shows a simple showcase embedded in a product page.
+  description: This sample shows how a simple showcase embedded in a product page looks.
   facts:
     - Horizontal showcase
     - With FSI ThumbBar
