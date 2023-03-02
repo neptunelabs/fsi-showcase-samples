@@ -21,13 +21,13 @@ This repository contains examples of how to use and build your own applications.
 Without starting this project in your IDE, you can discover, develop and customize
 all demos in JSFiddle.
 
-[Simple Showcase in JSFiddle][simpleshowjsf]
+[Product Detail Page (Vertical) in JSFiddle][simpleshowjsf]
 
-[Showcase Grid in JSFiddle][gridshowjsf]
+[Point Of Interest in JSFiddle][gridshowjsf]
 
 [Product Detail Page with in JSFiddle][pdpshowjsf]
 
-[Vertical Showcase in JSFiddle][verticalshowjsf]
+[Photographer Portfolio in JSFiddle][verticalshowjsf]
 
 [simpleshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/pdp-2
 [gridshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/poi
