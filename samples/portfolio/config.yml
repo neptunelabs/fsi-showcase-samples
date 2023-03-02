@@ -1,7 +1,7 @@
 overview:
   title: Photographer Portfolio
   image: logo.png
-  description: Shows how a portfolio could be displayed with ImageGrid and Metadata used and a zoom viewer on top.
+  description: Shows how a portfolio with ImageGrid and Metadata plus a zoom viewer on top looks.
   facts:
     - Showcase collection
     - With FSI ImageGrid
