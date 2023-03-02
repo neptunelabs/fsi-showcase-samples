@@ -29,6 +29,11 @@ all demos in JSFiddle.
 
 [Vertical Showcase in JSFiddle][verticalshowjsf]
 
+[simpleshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/pdp-2
+[gridshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/poi
+[pdpshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/pdp
+[verticalshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/portfolio
+
 ## Start and develop
 
 To run and modify this samples:
