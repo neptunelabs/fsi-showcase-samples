@@ -6,13 +6,13 @@ npm start
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-layers-samples/blob/main/LICENSE)
 
 
-FSI Showcase
+# FSI Showcase
 
-FSI Showcase combines the benefits of the zoom viewer with an image gallery.
-FSI Viewer and FSI ThumbBar (or FSI ImageGrid) can be combined for presenting a large number of images in a gallery.
-By clicking on an image, it will be opened in the FSI Viewer where every detail can be explored.
+FSI Showcase combines the benefits of a zoom viewer with an image gallery.
+FSI Viewer and FSI ThumbBar (or FSI ImageGrid) can be combined to present a large number of images in a gallery.
+Clicking on an image will open it in FSI Viewer, where every detail can be explored.
 
-This repository contains examples on how to use and build your own applications.
+This repository contains examples of how to use and build your own applications.
 
 ![Project Image](project.gif)
 
@@ -21,13 +21,18 @@ This repository contains examples on how to use and build your own applications.
 Without starting this project in your IDE, you can discover, develop and customize
 all demos in JSFiddle.
 
-[Simple Showcase in JSFiddle][simpleshowjsf]
+[Product Detail Page (Vertical) in JSFiddle][simpleshowjsf]
 
-[Showcase Grid in JSFiddle][gridshowjsf]
+[Point Of Interest in JSFiddle][gridshowjsf]
 
 [Product Detail Page with in JSFiddle][pdpshowjsf]
 
-[Vertical Showcase in JSFiddle][verticalshowjsf]
+[Photographer Portfolio in JSFiddle][verticalshowjsf]
+
+[simpleshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/pdp-2
+[gridshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/poi
+[pdpshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/pdp
+[verticalshowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-showcase-samples/portfolio
 
 ## Start and develop
 

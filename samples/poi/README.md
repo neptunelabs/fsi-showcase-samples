@@ -1,21 +1,25 @@
 # Using FSI Viewer for 360° Showcase Image Zoom - Points Of Interest
 
-This readme describes how a simple detail page 360° sample including Points Of Interest with *FSI Viewer* is achieved.
+This readme describes how a simple example of a 360° detail page including points of interest is achieved with *FSI Viewer*.
 The aim of the demo is to show how you can easily integrate spin images with zoom by just adding a simple viewer tag.
-The points of interest are achieved by using FSI ThumbBar.
+The points of interest are achieved using the FSI ThumbBar.
 
-In order to display 360° zoom with FSI Viewer, you only need to add the corresponding script
-to the head of your website:
+# Add your images/ assets to FSI Server
+
+The first thing you'll need to do is upload the images you want to use to FSI Server.
+You can install a [demo version](https://www.neptunelabs.com/get/) via Docker or use our [online demo server](https://demo.fsi-server.com/fsi/interface/) to try it out first.
+
+To display 360° zoom with FSI Viewer, all you need to do is add the following script to the top of your website
+at the top of your website:
 
 ```html
-<script
-  src='https://docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js'
-</script>
+<script src='https://docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js'</script>
+<script src="//docs.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
 ```
-This ensures that FSI Viewer is loaded.
+This will ensure that the FSI Viewer and FSI ThumbBar is loaded.
 
-Afterwards, you need to place the *<fsi-viewer>* tag you see in the Publish section on the place where you would like to see the viewer.
-In our example this will look like this:
+Next, you need to place the *<fsi-viewer>* tag you see in the Publish section where you want the viewer to appear.
+In our example this looks like this
 
 ```html
    <fsi-viewer
@@ -44,7 +48,7 @@ The resulting viewer with thumbbar looks like this:
         </div>
 ```
 
-For all parameters which can be used, please consult the [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-viewer).
+For all the parameters that can be used, please refer to the [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-viewer).
 
 ## Testing with examples from your own server
 

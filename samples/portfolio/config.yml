@@ -1,16 +1,34 @@
-title: Photographer Portfolio
-image: logo.png
-description: Shows how a portfolio could be displayed with ImageGrid and Metadata used and a zoom viewer on top.
-priority: 5
-jsfiddle:
+overview:
+  title: Photographer Portfolio
+  image: logo.png
+  description: Shows how a portfolio with ImageGrid and Metadata plus a zoom viewer on top looks.
+  facts:
+    - Showcase collection
+    - With FSI ImageGrid
+    - Use of meta data
+  priority: 5
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/misc-menu.yml
+      footer:
+        credits:
+          photos:
+            - author: Samuel Ferrara
+              link: https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/fsi-showcase/
+      fsi:
+        viewer: true
+        imageGrid: true
+      bootstrap:
+        icons: true
   mapping:
     html: "index.html"
     css: "portfolio.css"
     js: "portfolio.js"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js
-    - https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/imagegrid/js/fsiimagegrid.js"
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"
+jsfiddle:
+  deploy: true

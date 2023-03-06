@@ -1,16 +1,35 @@
-title: Product Detail Page (Vertical)
-image: logo.png
-description: Shows how a vertical Showcase can be used with color variants.
-priority: 1
-jsfiddle:
+overview:
+  title: Product Detail Page (Vertical)
+  image: logo.png
+  description: Shows how a horizontal Showcase can be used with color variants.
+  facts:
+    - Horizontal showcase
+    - With FSI ThumbBar
+    - Color Variants
+  order: 1
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/clothing-menu.yml
+      highlight: DEAL OF THE DAY
+      footer:
+        credits:
+          photos:
+            - author: Kate Skumen
+              link: https://unsplash.com/@skumen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/fsi-showcase/
+      fsi:
+        viewer: true
+        thumbBar: true
+      bootstrap:
+        icons: true
   mapping:
     html: "index.html"
     css: "pdp.css"
     js: "pdp.js"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/viewer/js/fsiviewer.js"
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/thumbbar/js/fsithumbbar.js"
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js
-    - https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css
+jsfiddle:
+  deploy: true
