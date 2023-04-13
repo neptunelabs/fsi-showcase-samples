@@ -1,5 +1,5 @@
 overview:
-  title: Point Of Interest
+  title: Point Of Interest (POI)
   image: logo.png
   description: Shows how a product detail page with 360° images and points of interest used looks.
   facts:
@@ -27,7 +27,7 @@ sample:
         icons: true
   mapping:
     html: "index.html"
-    css: "poi.css"
-    js: "poi.js"
+    css: "style.css"
+    js: "script.js"
 jsfiddle:
   deploy: true

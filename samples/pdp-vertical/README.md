@@ -111,7 +111,7 @@ This is done by calling the **changeImage** function onClick of the thumbnail:
 </div>
 ```
 
-The function itself can be found in the corresponding **pdp.js**.
+The function itself can be found in the corresponding **script.js**.
 Basically it just switches the image sources specified in the **imagesources** parameter in FSI ThumbBar and the image shown in FSI Viewer:
 
 ```javascript
