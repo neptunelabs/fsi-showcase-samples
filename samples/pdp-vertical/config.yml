@@ -1,5 +1,5 @@
 overview:
-  title: Product Detail Page (Vertical)
+  title: Product Detail Page (PDP Vertical)
   image: logo.png
   description: Shows how a horizontal Showcase can be used with color variants.
   facts:
@@ -29,7 +29,7 @@ sample:
         icons: true
   mapping:
     html: "index.html"
-    css: "pdp.css"
-    js: "pdp.js"
+    css: "style.css"
+    js: "script.js"
 jsfiddle:
   deploy: true
