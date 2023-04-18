@@ -4,12 +4,14 @@ This readme describes how to create a portfolio showcase using FSI Viewer and FS
 The aim of the demo is to show how you can easily integrate an image grid with metadata and zoom by just adding two simple custom tags.
 two simple custom tags.
 
+
 To display the Showcase, simply add the following scripts to the head of your website:
 
+
 ```html
-<script src="//fsi-site.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
-<script src="//fsi-site.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
-<script src="//fsi-site.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
+<script src="//docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
+<script src="//docs.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+<script src="//docs.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
 ```
 
 This will ensure that the viewers are loaded.
