@@ -30,12 +30,11 @@ fsi-imagegrid .fsi-imagegrid-root .myImageGridTitle > span {
 
 fsi-imagegrid .fsi-imagegrid-root .myImageGridText{
   padding:4px;
-  font-size:12px;
+  font-size:11px;
   text-align:left;
-  height:80px;
+  height:40px;
   color:#3c3c3b;
   overflow:hidden;
-  white-space: nowrap;
   line-height: 1;
 }
 
@@ -49,7 +48,7 @@ fsi-imagegrid .fsi-imagegrid-root .myImageGridText > span{
 
 fsi-imagegrid .fsi-imagegrid-root .myImageGridImage{
   width:100%;
-  height:calc(100% - 105px);
+  height:calc(100% - 65px)!important;
   background-color:#DDD;
   text-align:center;
 }
@@ -65,8 +64,6 @@ fsi-imagegrid .fsi-imagegrid-root .fsi-imagegrid-inner-container > div{
   padding:4px;
   background-color:#FFF;
   border: 0;
-  padding-top: 2px;
-  padding-bottom: 2px;
   will-change: box-shadow;
   transition: all 0.15s ease;
   cursor: pointer;
