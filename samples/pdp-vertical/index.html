@@ -1,0 +1,132 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-5">
+    <div class="col viewer">
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          display: flex !important;
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+        "
+        id="fsi-showcase-1673881981909-9879306"
+      >
+        <fsi-viewer
+          id="fsi-viewer-1673881981909-9160423"
+          style="flex: 1 1 100%"
+          width="100%"
+          height="100%"
+          skin="white"
+          plugins="resize,fullScreen"
+          fullScreenElement="fsi-showcase-1673881981909-9879306"
+        >
+        </fsi-viewer>
+        <fsi-thumbbar
+          style="flex: 0 0 160px"
+          class="viewer"
+          width="100%"
+          height="100%"
+          imagesources="images/samples/showcase/pdp/kate-skumen-3FoSvueTVCk-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-h7FPeFBi3Mo-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-S6xhmSe7RdA-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg"
+          useTouchZoom="true"
+          elementWidth="120px"
+          elementSpacing="4px"
+          alignment="0.5"
+          id="thumbbar"
+          paddingTop="0"
+          paddingBottom="4px"
+          autoCrop="cc"
+          viewerSelector="#fsi-viewer-1673881981909-9160423"
+        >
+        </fsi-thumbbar>
+      </div>
+    </div>
+    <div class="col mx-auto">
+      <div class="p-3 text-left">
+        <h2 class="display-5">Peggy</h2>
+        <p>Dress, Corduroy & Cotton</p>
+        <p>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+          <small>(4664) Ratings</small>
+        </p>
+        <p>Comfortable and stylish at the same time.</p>
+        <p>
+          No matter how your day looks like - a stressful workday, casual dinner, or just running errands - Peggy always
+          makes you look great.
+        </p>
+        <p>
+          <small>Dispatched in 4 working days</small>
+        </p>
+        <div class="row pb-3">
+          <div class="col-4 h-100 d-inline-block">
+            <img
+              class="thumbnail img-fluid"
+              onclick="changeImage('0')"
+              src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg&height=150"
+              height="150"
+              alt=""
+            />
+            <p>
+              <small>Charcoal</small>
+            </p>
+          </div>
+          <div class="col-4 h-100 d-inline-block">
+            <img
+              class="thumbnail img-fluid"
+              onclick="changeImage('1')"
+              src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg&height=150"
+              height="150"
+              alt=""
+            />
+            <p>
+              <small>Burgundy</small>
+            </p>
+          </div>
+          <div class="col-4 h-100 d-inline-block">
+            <img
+              class="thumbnail img-fluid"
+              onclick="changeImage('2')"
+              src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg&height=150"
+              height="150"
+              alt=""
+            />
+            <p>
+              <small>Mountain Grey</small>
+            </p>
+          </div>
+        </div>
+        <div class="btn-group py-3">
+          <button type="button" class="btn btn-lg btn-outline-dark">Learn more</button>
+        </div>
+        <div class="btn-group py-3">
+          <button type="button" class="btn btn-lg btn-outline-dark">Add to basket</button>
+        </div>
+        <p class="pt-3">
+          <strong>Product Details</strong>
+        </p>
+
+        <div class="row">
+          <div class="col-1 text-left">
+            <i class="bi bi-caret-right-fill"></i>
+          </div>
+          <div class="col-11 text-left">Flattering fit</div>
+        </div>
+        <div class="row">
+          <div class="col-1 text-left">
+            <i class="bi bi-caret-right-fill"></i>
+          </div>
+          <div class="col-11 text-left">3/4 sleeves</div>
+        </div>
+        <div class="row">
+          <div class="col-1 text-left">
+            <i class="bi bi-caret-right-fill"></i>
+          </div>
+          <div class="col-11 text-left">Available in 3 colours</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

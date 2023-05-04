@@ -1,0 +1,35 @@
+overview:
+  title: Product Detail Page (PDP Vertical)
+  image: logo.png
+  description: Shows how a horizontal Showcase can be used with color variants.
+  facts:
+    - Horizontal showcase
+    - With FSI ThumbBar
+    - Color Variants
+  order: 1
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/clothing-menu.yml
+      highlight: DEAL OF THE DAY
+      footer:
+        credits:
+          photos:
+            - author: Kate Skumen
+              link: https://unsplash.com/@skumen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/fsi-showcase/
+      fsi:
+        viewer: true
+        thumbBar: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: "index.html"
+    css: "style.css"
+    js: "script.js"
+playground:
+  deploy: true

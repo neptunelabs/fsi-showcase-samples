@@ -1,0 +1,34 @@
+overview:
+  title: Product Detail Page (PDP)
+  image: logo.png
+  description: This sample shows how a simple showcase embedded in a product page looks.
+  facts:
+    - Horizontal showcase
+    - With FSI ThumbBar
+    - Point Of Interest
+    - Labels
+  order: 7
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/misc-menu.yml
+      highlight: DEAL OF THE DAY
+      footer:
+        credits:
+          photos:
+            - author: NeptuneLabs GmbH
+          viewer:
+            link: https://www.neptunelabs.com/fsi-showcase/
+      fsi:
+        viewer: true
+        thumbBar: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: "index.html"
+    js: "script.js"
+    css: "style.css"
+playground:
+  deploy: true

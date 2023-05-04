@@ -1,0 +1,19 @@
+fsi-thumbbar div.fsi-thumbbar-container .fsi-thumbbar-thumbnail img {
+  border: 1px solid transparent;
+}
+
+fsi-thumbbar div.fsi-thumbbar-container .fsi-thumbbar-thumbnail.fsi-selected-thumb img {
+  border-color: #355d5d;
+}
+
+@media (max-width: 992px) {
+  .viewer {
+    height: 400px !important;
+  }
+}
+
+@media (max-height: 400px) {
+  .viewer {
+    height: 200px !important;
+  }
+}

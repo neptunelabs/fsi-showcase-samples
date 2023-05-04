@@ -1,0 +1,33 @@
+overview:
+  title: Point Of Interest (POI)
+  image: logo.png
+  description: Shows how a product detail page with 360° images and points of interest used looks.
+  facts:
+    - Vertical showcase
+    - With FSI ThumbBar
+    - Points Of Interest
+  order: 4
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/misc-menu.yml
+      highlight: DEAL OF THE DAY
+      footer:
+        credits:
+          photos:
+            - author: 360ties GmbH
+          viewer:
+            link: https://www.neptunelabs.com/fsi-showcase/
+      fsi:
+        viewer: true
+        thumbBar: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: "index.html"
+    css: "style.css"
+    js: "script.js"
+playground:
+  deploy: true

@@ -1,0 +1,34 @@
+overview:
+  title: Photographer Portfolio
+  image: logo.png
+  description: Shows how a portfolio with ImageGrid and Metadata plus a zoom viewer on top looks.
+  facts:
+    - Showcase collection
+    - With FSI ImageGrid
+    - Use of meta data
+  priority: 5
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/misc-menu.yml
+      footer:
+        credits:
+          photos:
+            - author: Samuel Ferrara
+              link: https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/fsi-showcase/
+      fsi:
+        viewer: true
+        imageGrid: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: "index.html"
+    css: "style.css"
+    js: "script.js"
+playground:
+  deploy: true
