@@ -7,9 +7,9 @@ two simple custom tags. In this case, FSI Viewer is combined with FSI ThumbBar.
 To display the showcase, simply add the following scripts to the head of your website:
 
 ```html
-<script src="//docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
-<script src="//docs.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
-<script src="//docs.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
+<script src="//fsi.domain.tld/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
+<script src="//fsi.domain.tld/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+<script src="//fsi.domain.tld/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
 ```
 
 This will ensure that the viewers are loaded.
@@ -131,7 +131,7 @@ to the head of your website:
 
 ```html
 <script
-  src='https://docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js'
+  src='https://fsi.domain.tld/fsi/viewer/applications/viewer/js/fsiviewer.js'
 </script>
 ```
 This ensures that FSI Viewer is loaded.

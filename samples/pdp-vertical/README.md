@@ -7,9 +7,9 @@ two simple custom tags.
 To display the Showcase, simply add the following scripts to the head of your website:
 
 ```html
-<script src="//docs.neptunelabs.com/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
-<script src="//docs.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
-<script src="//docs.neptunelabs.com/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
+<script src="//fsi.domain.tld/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
+<script src="//fsi.domain.tld/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
+<script src="//fsi.domain.tld/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
 ```
 
 This will ensure that the viewers are loaded.
@@ -77,7 +77,7 @@ This is done by calling the **changeImage** function onClick of the thumbnail:
   <img
     class="thumbnail img-fluid"
     onclick="changeImage('0')"
-    src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg&height=150"
+    src="//fsi.domain.tld/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg&height=150"
     height="150"
     alt=""
   />
@@ -89,7 +89,7 @@ This is done by calling the **changeImage** function onClick of the thumbnail:
   <img
     class="thumbnail img-fluid"
     onclick="changeImage('1')"
-    src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg&height=150"
+    src="//fsi.domain.tld/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg&height=150"
     height="150"
     alt=""
   />
@@ -101,7 +101,7 @@ This is done by calling the **changeImage** function onClick of the thumbnail:
   <img
     class="thumbnail img-fluid"
     onclick="changeImage('2')"
-    src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg&height=150"
+    src="//fsi.domain.tld/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg&height=150"
     height="150"
     alt=""
   />
