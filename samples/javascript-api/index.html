@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-5">
+    <div class="col productContainer" id="productContainer">
+      <img id="thumbImg" src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=600&height=600&effects=pad(CC,FFFFFF)" width="600" alt="">
+      <button type="button" id="thumbBtn" class="btn btn-lg btn-outline-dark">Show Zoom</button>
+    </div>
+    <div class="col mx-auto">
+      <div class="p-3 text-left">
+        <h2 class="display-5">Emma</h2>
+        <p>Bedside Table, Natural Wood</p>
+        <p>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+          <small>(4664) Ratings</small>
+        </p>
+        <p>Convenient and stylish at the same time.</p>
+        <p>
+          With its elegant design, this bedside table is a timeless addition to your interior. Engineered wood is an exceptional quality material with a smooth surface that is characterised by strength, stability and moisture resistance.
+          The metal frame ensures sturdiness and stability and provides plenty of storage space to keep various everyday items well organised and within easy reach.
+        </p>
+        <p>
+          <small>Dispatched in 4 working days</small>
+        </p>
+        <div class="btn-group py-3">
+          <button type="button" class="btn btn-lg btn-outline-dark">Learn more</button>
+        </div>
+        <div class="btn-group py-3">
+          <button type="button" class="btn btn-lg btn-outline-dark">Add to basket</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="myModal"
+    class="modal fade bd-example-modal-xl"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myExtraLargeModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="myModalToggleLabel">FSI Showcase - click on the image to zoom</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="showcase"
+            id="showcase"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

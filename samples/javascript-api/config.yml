@@ -1,0 +1,37 @@
+overview:
+  title: JavaScript API
+  image: logo.png
+  description: Learn how to use the JavaScript ThumbBar API with a simple demo.
+  facts:
+    - Horizontal showcase
+    - With FSI ThumbBar and FSI Viewer assigned
+    - Modal?
+  order: 98
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      featured:
+        template: data/furniture-featured.yml
+      highlight: DEAL OF THE DAY
+      footer:
+        credits:
+          photos:
+            author: various artists
+            link: https://pixabay.com/
+            platform: Pixabay
+          viewer:
+            link: https://www.neptunelabs.com/fsi-showcase/
+      fsi:
+        viewer: true
+        thumbBar: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: "index.html"
+    css: "style.css"
+    js: "script.js"
+playground:
+  deploy: true
