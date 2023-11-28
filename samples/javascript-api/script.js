@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       alignment:'0.5',
       paddingTop:'0',
       autoCrop:'cc',
-      onReady: () => {
+      onInit: () => {
         // assignViewer
         addViewer()
       },
