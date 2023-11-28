@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     openPopUp()
 
     const ele = document.createElement("div");
-    ele.style.width = '600px'
+    ele.style.width = '1100px'
     ele.style.height = '600px'
     ele.setAttribute("id", 'zoomViewer');
     document.getElementById('showcase').appendChild(ele);
@@ -15,12 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
       plugins: 'resize,fullScreen',
       skin: 'white',
       fullScreenElement:'showcase',
-      // listen for finished loading FSI ThumbBar and becomes interactive
     });
     instance.start();
 
     const thumbViewer = document.createElement("div");
-    thumbViewer.style.width = '600px'
+    thumbViewer.style.width = '1100px'
     thumbViewer.style.height = '200px'
     thumbViewer.setAttribute("id", 'thumbViewer');
     document.getElementById('showcase').appendChild(thumbViewer);
@@ -30,12 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
       height:'200px',
       debug:'true',
       imagesources:'images/samples/ssi/furniture/living-room-7547558.jpg, images/samples/ssi/furniture/living-room-7547559.jpg,\timages/samples/ssi/furniture/home-7547557.jpg',
-      useTouchZoom:'true',
-      elementWidth:'120px',
+      useTouchZoom:'false',
+      elementWidth:'350px',
       elementSpacing:'4px',
       alignment:'0.5',
       paddingTop:'0',
-      paddingBottom:'4px',
       autoCrop:'cc',
       onReady: () => {
         // assignViewer
@@ -45,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addViewer () {
       // toggle page index
-      thumbInstance.assignViewer('zoomViewer')
+      thumbInstance.assignFSIViewer('zoomViewer')
     }
 
   })

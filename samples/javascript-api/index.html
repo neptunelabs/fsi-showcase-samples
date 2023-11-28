@@ -2,7 +2,7 @@
   <div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-5">
     <div class="col productContainer" id="productContainer">
       <img id="thumbImg" src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=600&height=600&effects=pad(CC,FFFFFF)" width="600" alt="">
-      <button type="button" id="thumbBtn" class="btn btn-lg btn-outline-dark">Show Zoom</button>
+      <button type="button" id="thumbBtn" class="btn btn-lg btn-outline-dark" data-bs-target="#myModal" data-bs-toggle="modal">Show Zoom</button>
     </div>
     <div class="col mx-auto">
       <div class="p-3 text-left">
@@ -47,7 +47,7 @@
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="myModalToggleLabel">FSI Showcase - click on the image to zoom</h1>
+          <h2 class="display-5 modal-title fs-5" id="myModalToggleLabel"><b>Emma</b> - Bedside Table, Natural Wood</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
