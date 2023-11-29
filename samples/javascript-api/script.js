@@ -2,17 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('thumbBtn').addEventListener('click', () => {
 
-    const createNode = function(nodeName, attributes){
-      const ret = document.createElement(nodeName);
-      for (const key in attributes) ret.setAttribute(key, attributes[key]);
-      return ret;
-    };
-
     const container = document.getElementById('showcase');
-    while (container.firstChild) container.removeChild(container.firstChild); // remove existing content
+    if (container.firstChild) return; // viewers already setup
 
     container.appendChild(
-      createNode("fsi-viewer", {
+      $FSI.createNode("fsi-viewer", {
         id: "zoomViewer",
         width: 1100,
         height: 600,
@@ -22,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     )
 
     container.appendChild(
-      createNode("fsi-thumbbar", {
+      $FSI.createNode("fsi-thumbbar", {
         src: "images/samples/ssi/furniture/living-room-7547558.jpg",
         width: "100%",
         height: 200,
