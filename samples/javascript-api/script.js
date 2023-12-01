@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         width: "100%",
         height: 200,
         debug: true,
-        imagesources: "images/samples/ssi/furniture/living-room-7547558.jpg, images/samples/ssi/furniture/living-room-7547559.jpg,\timages/samples/ssi/furniture/home-7547557.jpg",
+        imagesources: "images/samples/ssi/furniture/living-room-7547558.jpg, images/samples/ssi/furniture/living-room-7547559.jpg,images/samples/ssi/furniture/home-7547557.jpg",
         useTouchZoom: false,
         elementWidth: "350px",
         elementSpacing: "4px",

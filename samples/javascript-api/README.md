@@ -8,140 +8,96 @@ To display the Showcase, simply add the following scripts to the head of your we
 
 ```html
 <script src="//fsi.domain.tld/fsi/viewer/applications/viewer/js/fsiviewer.js"></script>
-<script src="//fsi.domain.tld/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js"></script>
 <script src="//fsi.domain.tld/fsi/viewer/applications/thumbbar/js/fsithumbbar.js"></script>
 ```
 
-This will ensure that the viewers are loaded.
+Normally you would need to place the *<fsi-viewer>* and <fsi-thumbbar> tag in your source code where you want the viewer to be displayed.
 
-Next, you need to place the tags you see in the Publish section where you want the viewer to appear.
-In our example, this will look like this:
+In this example, we only want to display the viewer in a modal when a button is clicked.
+This means that the viewer is initialised by JavaScript.
+
+To do this, we have created this part in the body:
 
 ```html
+<div class="col productContainer" id="productContainer">
+  <img id="thumbImg" src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=600&height=600&effects=pad(CC,FFFFFF)" width="600" alt="">
+  <button type="button" id="thumbBtn" class="btn btn-lg btn-outline-dark" data-bs-target="#myModal" data-bs-toggle="modal">Show Zoom</button>
+</div>
 <div
-  style="width:100%;height:100%;display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;"
-  id="fsi-showcase-1630681849054-8658698"
+  id="myModal"
+  class="modal fade bd-example-modal-xl"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myExtraLargeModalLabel"
+  aria-hidden="true"
 >
-  <fsi-thumbbar
-    style="flex: 0 0 160px;"
-    width="100%"
-    height="100%"
-    imagesources="images/samples/showcase/pdp/kate-skumen-3FoSvueTVCk-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-h7FPeFBi3Mo-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-S6xhmSe7RdA-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg"
-    useTouchZoom="true"
-    vertical="true"
-    elementWidth="160px"
-    elementSpacing="4px"
-    alignment="0.5"
-    id="thumbbar"
-    paddingTop="0"
-    paddingBottom="4px"
-    autoCrop="cc"
-    viewerSelector="#viewer"
-  >
-  </fsi-thumbbar>
-  <fsi-viewer
-    id="viewer"
-    style="flex: 1 1 100%;"
-    width="100%"
-    height="100%"
-    plugins="resize,fullScreen"
-    fullScreenElement="fsi-showcase-1630681849054-8658698"
-    skin="white"
-  >
-  </fsi-viewer>
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="display-5 modal-title fs-5" id="myModalToggleLabel"><b>Emma</b> - Bedside Table, Natural Wood</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="showcase"
+             id="showcase"
+        >
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 ```
 
-You may notice that we have switched from the **dir** parameter shown in the Publish tab to **imagesources**:
-
-```html
-imagesources="images/samples/showcase/pdp/kate-skumen-3FoSvueTVCk-unsplash.jpg,
-images/samples/showcase/pdp/kate-skumen-h7FPeFBi3Mo-unsplash.jpg,
-images/samples/showcase/pdp/kate-skumen-S6xhmSe7RdA-unsplash.jpg,
-images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg"
-```
-
-If you have a directory with more images than you need for your showcase - as in our case, where we have different colour versions of the dress in the same directory
-of the dress in the same directory, you can use **imagesources** to directly address the images you want to be visible.
-
-For all the parameters that can be used, please consult the [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-viewer).
-
-## Switching colour variants
-
-By clicking on the thumbnail of the colour variant on the right, you can switch between the different colour variants.
-
-This is done by calling the **changeImage** function onClick of the thumbnail:
-
-```html
-<div class="col-4 h-100 d-inline-block">
-  <img
-    class="thumbnail img-fluid"
-    onclick="changeImage('0')"
-    src="//fsi.domain.tld/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg&height=150"
-    height="150"
-    alt=""
-  />
-  <p>
-    <small>Charcoal</small>
-  </p>
-</div>
-<div class="col-4 h-100 d-inline-block">
-  <img
-    class="thumbnail img-fluid"
-    onclick="changeImage('1')"
-    src="//fsi.domain.tld/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg&height=150"
-    height="150"
-    alt=""
-  />
-  <p>
-    <small>Burgundy</small>
-  </p>
-</div>
-<div class="col-4 h-100 d-inline-block">
-  <img
-    class="thumbnail img-fluid"
-    onclick="changeImage('2')"
-    src="//fsi.domain.tld/fsi/server?type=image&source=images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg&height=150"
-    height="150"
-    alt=""
-  />
-  <p>
-    <small>Mountain Grey</small>
-  </p>
-</div>
-```
+`productContainer` is the div that contains all the elements.
+`thumbImg` is the image that will be displayed on load and replaced by the viewer.
+The `thumbBtn` button is used to switch from the image to the viewer.
+In the Bootstrap modal, the `showcase` div will contain the FSI viewer..
 
 The function itself can be found in the corresponding **script.js**.
-Basically it just switches the image sources specified in the **imagesources** parameter in FSI ThumbBar and the image shown in FSI Viewer:
-
 ```javascript
-function changeImage(buttonID) {
-  let imagesrc
-  let src
-  switch (buttonID) {
-    case '0':
-      imagesrc =
-        'images/samples/showcase/pdp/kate-skumen-3FoSvueTVCk-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-h7FPeFBi3Mo-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-S6xhmSe7RdA-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-Z_wBSL_fPzw-unsplash.jpg'
-      src = 'images/samples/showcase/pdp/kate-skumen-3FoSvueTVCk-unsplash.jpg'
-      break
-    case '1':
-      imagesrc =
-        'images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-n268Z4TSd6M-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-glmDobIx4o0-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash-x.jpg'
-      src = 'images/samples/showcase/pdp/kate-skumen-PJRabkuH3_Q-unsplash.jpg'
-      break
-    case '2':
-      imagesrc =
-        'images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-KFz7sRs0ddI-unsplash.jpg, images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash-x.jpg, images/samples/showcase/pdp/kate-skumen-KFz7sRs0ddI-unsplash-x.jpg'
-      src = 'images/samples/showcase/pdp/kate-skumen-XsFiUIamdTo-unsplash.jpg'
-      break
-  }
-  document
-    .getElementsByTagName('fsi-thumbbar')[0]
-    .changeConfig(undefined, { imagesources: imagesrc, autoCrop: 'cc', vertical: true, elementWidth: '160px' })
-  document.getElementsByTagName('fsi-viewer')[0].changeConfig(undefined, { imagesrc: src })
-}
+document.addEventListener('DOMContentLoaded', () => {
+
+  document.getElementById('thumbBtn').addEventListener('click', () => {
+
+    const container = document.getElementById('showcase');
+    if (container.firstChild) return; // viewers already setup
+
+    container.appendChild(
+      $FSI.createNode("fsi-viewer", {
+        id: "zoomViewer",
+        width: 1100,
+        height: 600,
+        skin: 'white',
+        debug: true
+      })
+    )
+
+    container.appendChild(
+      $FSI.createNode("fsi-thumbbar", {
+        src: "images/samples/ssi/furniture/living-room-7547558.jpg",
+        width: "100%",
+        height: 200,
+        debug: true,
+        imagesources: "images/samples/ssi/furniture/living-room-7547558.jpg, images/samples/ssi/furniture/living-room-7547559.jpg,images/samples/ssi/furniture/home-7547557.jpg",
+        useTouchZoom: false,
+        elementWidth: "350px",
+        elementSpacing: "4px",
+        alignment: 0.5,
+        paddingTop: 0,
+        autoCrop: "cc",
+        viewerSelector: "#zoomViewer"
+      })
+    );
+
+  })
+})
+
 ```
 
-## Testing with examples from your own server
+A click on the `thumbBtn` element will initialise a new FSI Viewer and a new FSI ThumbBar element in the `showcase` element.
 
-To test the examples with images from your own [FSI Server](https://www.neptunelabs.com/fsi-server/), please first copy the env.yml.dist file to env.yml and adapt the file, then restart the main demo again.
+The viewers itself are created with `$FSI.createNode("fsi-viewer",{parameters})` and `$FSI.createNode("fsi-thumbbar",{parameters})`.
+
+It's important to put the ID of the FSI Viewer in the ` viewerSelector: "#zoomViewer"` to ensure it is used by the ThumbBar.
