@@ -1,6 +1,7 @@
 ---
 title: 'FSI Showcase'
 projectURL: https://www.neptunelabs.com/fsi-showcase/
+schema: overview-taupe
 originAssetPath:
 playground:
   stackblitz: fsi-showcase-samples
