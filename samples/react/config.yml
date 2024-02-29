@@ -2,7 +2,7 @@ overview:
   title: React
   image: logo.png
   description: Shows how FSI components can be implemented in React.
-  order: 10
+  order: 11
   facts:
     - Sample component containing Showcase made out of FSI Viewer and FSI ThumbBar
     - FSI Component

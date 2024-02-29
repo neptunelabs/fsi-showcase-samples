@@ -6,7 +6,7 @@ overview:
     - Horizontal showcase
     - With FSI ThumbBar and FSI Viewer assigned
     - Modal?
-  order: 98
+  order: 10
 sample:
   template:
     schema: bootstrap-taupe
