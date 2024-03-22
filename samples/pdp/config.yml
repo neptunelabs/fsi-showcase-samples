@@ -8,27 +8,19 @@ overview:
     - Point Of Interest
     - Labels
   order: 7
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: framework-2023
-    components:
-      menu:
-        template: data/misc-menu.yml
-      highlight: DEAL OF THE DAY
-      footer:
-        credits:
-          photos:
-            - author: NeptuneLabs GmbH
-          viewer:
-            link: https://www.neptunelabs.com/fsi-showcase/
-      fsi:
-        viewer: true
-        thumbBar: true
-      bootstrap:
-        icons: true
-  mapping:
-    html: "index.html"
-    js: "script.js"
-    css: "style.css"
-playground:
-  deploy: true
+  menu:
+    data: misc-menu.yml
+  highlight: DEAL OF THE DAY
+  footer:
+    credits:
+      photos:
+        - author: NeptuneLabs GmbH
+      viewer:
+        link: https://www.neptunelabs.com/fsi-showcase/
+  fsi:
+    viewer: true
+    thumbBar: true
+  bootstrap:
+    icons: true

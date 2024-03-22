@@ -13,7 +13,7 @@ Clicking on an image will open it in FSI Viewer, where every detail can be explo
 
 This repository contains examples of how to use and build your own applications.
 
-![Project Image](project.apng)
+[![Project Image](project.apng)][GHPages]
 
 ## Getting Started
 
