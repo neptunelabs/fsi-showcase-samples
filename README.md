@@ -1,11 +1,14 @@
-# [FSI Showcase](https://www.neptunelabs.com/fsi-showcase/) &middot; [Samples][GHPages]
+# FSI Showcase Samples
 | ***Pixel-perfect*** | ***High-DPI-ready*** | ***Fast :rocket:*** | ***Hackable*** | ***Consistent*** |
 |:-----------------:|:-------------:|:---------------:|:---------------:|:---------------:|
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)][License]
 
+---
 
-# FSI Showcase
+* [Live Samples @ GitHub Pages 🔗][GHPages]
+* [FSI Showcase - Product Page 🔗](https://www.neptunelabs.com/fsi-showcase/)
+* [Documentation 🔗][Docs]
 
 FSI Showcase combines the benefits of a zoom viewer with an image gallery.
 FSI Viewer and FSI ThumbBar (or FSI ImageGrid) can be combined to present a large number of images in a gallery.
